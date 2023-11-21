@@ -6,5 +6,6 @@ public class Hello {
 	   System.out.println(300);
 	   System.out.println(12.34);
 	   System.out.print('A');   // '문자'
+	   System.out.print("update");  
    }
 }
