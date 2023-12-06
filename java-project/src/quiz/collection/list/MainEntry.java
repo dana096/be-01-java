@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 프로그램 작성하기
  */
 
-public class MainEntry {  // view
+public class MainEntry {  // view 
 	static String name;
 	static String add;
 	static String tel;

@@ -5,9 +5,9 @@ class StackQueueEx
 {
 	public static void main(String[] args) 
 	{
-		Stack st = new Stack();
-		// LinkedList�� Queue�������̽��� �����Ͽ���.
-		Queue q = new LinkedList();	
+		Stack st = new Stack();  // LIFO
+		// LinkedList는 Queue인터페이스를 구현하였다.
+		Queue q = new LinkedList();	// FIFO
 		
 		st.push("0");
 		st.push("1");

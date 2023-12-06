@@ -1,4 +1,4 @@
-package quiz.inheritance.ex01;
+package quiz.ex01; 
 
 import java.util.Scanner;
 

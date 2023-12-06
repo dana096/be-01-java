@@ -1,4 +1,4 @@
-package quiz.inheritance.ex01;
+package quiz.ex01;
 
 public class Emp {  // Super class
 	
@@ -13,7 +13,7 @@ public class Emp {  // Super class
 		this.dept = dept;
 		this.phone = phone;
 	}
-	public void display(){
+	public void display(){ 
 		System.out.print(empNum+", "+name+", "+position+", "+dept+", "+phone);
 	}
 

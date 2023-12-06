@@ -8,7 +8,7 @@ public class MainEntry {
 		System.out.println("\n========================");
 		
 		s.input();
-		s.display();
+		s.display(); 
 	}	
 }
 

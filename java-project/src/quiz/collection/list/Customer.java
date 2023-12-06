@@ -13,13 +13,13 @@ public class Customer { // model
 	protected String tel;
 
 	//
-	Customer() {
+	Customer() { 
 	}
 
 	Customer(String name, String add, String tel) {
 		this.name = name;
 		this.add = add;
-		this.tel = tel;
+		this.tel = tel; 
 	}
 
 	//

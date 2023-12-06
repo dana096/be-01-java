@@ -10,7 +10,7 @@ public class HashMapEx1 {
 		
 		map.put("encore", "1234");  // id, password
 		map.put("kosa", "1111");
-		map.put("kingsmile", "1234");
+		map.put("kingsmile", "1234"); 
 //		map.put("encore", "1004");
 		
 		System.out.println(map);

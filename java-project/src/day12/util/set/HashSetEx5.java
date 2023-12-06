@@ -28,7 +28,7 @@ class HashSetEx5 {
 
 		it = setA.iterator();
 		while(it.hasNext()) {
-			Object tmp = it.next();
+			Object tmp = it.next();  
 			if(!setB.contains(tmp))
 				setCha.add(tmp);
 		}
@@ -41,8 +41,8 @@ class HashSetEx5 {
 		while(it.hasNext())
 			setHab.add(it.next());
 
-		System.out.println("A ∩ B = "+setKyo);  // A, B의 교집합 문자열
-		System.out.println("A ∪ B = "+setHab); // A, B의 합집합 문자열
+		System.out.println("A ∩ B = "+setKyo);  //  // 한글 ㄷ을 누르고 한자키
+		System.out.println("A ∪ B = "+setHab); // A,B의 합집합 문자열
 		System.out.println("A - B = "+setCha); 
 	}
 }

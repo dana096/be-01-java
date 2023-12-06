@@ -11,7 +11,7 @@ public class HashMapEx3{
 	
 	public static void main(String[] args) {
 		addPhoneNo("친구", "이자바", "010-9872-0202");
-		addPhoneNo("친구", "김자바", "010-1111-1111");
+		addPhoneNo("친구", "김자바", "010-1111-1111"); 
 		addPhoneNo("친구", "박자바", "010-2222-2222");
 		addPhoneNo("회사", "김대리", "010-3333-3333");
 		addPhoneNo("회사", "박과장", "010-5555-5555");

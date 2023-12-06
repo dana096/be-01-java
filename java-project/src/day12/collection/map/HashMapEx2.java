@@ -8,12 +8,12 @@ import java.util.Map;
 import java.util.Set;
 
 // Map =  key / value 한쌍으로 처리, (set + list)
-public class HashMapEx2 {
+public class HashMapEx2 { 
 	public static void main(String[] args) {
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		map.put("연아", new Integer(90));
 		map.put("단아", 100);
-		map.put("동혁", 50);
+		map.put("동혁", 50); 
 		map.put("경민", 80);
 		map.put("승민", 75);
 		System.out.println(map);

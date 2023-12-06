@@ -9,7 +9,7 @@ class PropertiesEx3
 		Properties prop = new Properties();
 
 		prop.setProperty("timeout","30");
-		prop.setProperty("language","�ѱ�");
+		prop.setProperty("language","한글");
 		prop.setProperty("size","10");
 		prop.setProperty("capacity","10");
 

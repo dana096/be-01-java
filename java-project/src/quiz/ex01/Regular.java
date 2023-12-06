@@ -1,4 +1,4 @@
-package quiz.inheritance.ex01;
+package quiz.ex01; 
 
 public class Regular extends Emp {  // Sub class
 

@@ -13,7 +13,7 @@ public class MainEntry {
 			
 		Scanner sc = new Scanner(System.in);
 		int choice = 0;
-		System.out.print("1. 내부정규직원, " 
+		System.out.print("1. 내부정규직원, "   
 						+ "2.영업부직원  "
 						+ "3.아르바이트 중 사원형태를 입력해주세요 ex) 판매사원  : ");
 	

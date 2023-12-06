@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CustomerManager extends Customer { // controller
 	//
-	ArrayList<Customer> list = new ArrayList<Customer>();
+	ArrayList<Customer> list = new ArrayList<Customer>(); 
 
 	//
 	CustomerManager() {

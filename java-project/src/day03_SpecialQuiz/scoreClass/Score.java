@@ -7,7 +7,7 @@ public class Score {
 
 	// 멤버변수
 	private String name = null;
-	private int kor, eng, com, tot = 0;
+	private int kor, eng, com, tot = 0; 
 	private double avg = 0.0;
 	private char grade;
 
