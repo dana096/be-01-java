@@ -31,6 +31,7 @@ public class BMIManager extends BMI {
 		System.out.print("몸무게  >> ");
 		weight = sc.nextDouble();	
 		getbmi = weight / ((height / 100) * (height / 100));
+		
 		System.out.println("[NOTICE] BMI를 측정중입니다.\n측정중.........");
 		while (true) {
 			Thread.sleep(100);
@@ -47,9 +48,14 @@ public class BMIManager extends BMI {
 			bmi = "과체중";		
 		else if (getbmi >= 25)
 			bmi = "비만";
-		}		
+		}
+		
+		System.out.println("\n\n[NOTICE] BMI 정보 등록 완료!!");
+		System.out.println("\n[사용자 이름] : " + name + "\n[사용자 성별] : " + temp + "\n[사용자 몸무게] : " + weight
+				+ "\n[사용자 키] : " + height + "\n[사용자 BMI] : " + getbmi + "\n[사용자 BMI 판정 결과] : " + bmi + "\r\n");
+		
 		BMI b = new BMI(name, temp, height, weight, bmi);
-		list.add(b);
+		list.add(b);	
 	}
 	
 	public void BMIRmv(int i) {
@@ -69,6 +75,8 @@ public class BMIManager extends BMI {
 			System.out.println("[ 사용자 BMI 판정 결과 ] : " + bmi);
 			System.out.println();
 	}
+	
+	
 	
 	public void BMIMod(int i, String name, String temp, double height, double weight, String bmi) {
 		BMI b = new BMI(name, temp, height, weight, bmi);

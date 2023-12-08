@@ -34,11 +34,10 @@ public class MainEntry {
 			case 1:
 				System.out.println("\n1. 회원 정보 추가");
 				bm.BMIAdd();
-				System.out.println("\n[NOTICE] BMI 정보 등록 완료!!");
 				break;
 			case 2:
 				System.out.println("\n2. 회원 정보 삭제");
-				bm.display();
+				bm.output();
 				System.out.println("---------------------------");
 				System.out.print("삭제할 회원의 번호를 입력하세요 >> ");
 				inNum = sc.nextInt();
@@ -51,12 +50,12 @@ public class MainEntry {
 				break;
 			case 4:
 				System.out.println("\n4. 회원 정보 수정");
-				bm.display();
+				bm.output();
 				System.out.println("---------------------------");
 				System.out.print("수정할 회원의 번호를 입력하세요 >> ");
 				inNum = sc.nextInt();
 				System.out.println("수정할 회원의 정보를 입력하세요."); 
-				display();
+				bm.output();
 				bm.BMIMod(inNum, name, temp, height, weight, bmi);
 				System.out.println("* 수정완료");
 				break;
