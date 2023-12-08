@@ -1,4 +1,4 @@
-package quiz.BMI;
+package quiz.BMI.verDA;
 
 /*
 문제] 비만도 측정 프로그램 작성 - collection, file, io 이용하기
@@ -19,20 +19,26 @@ public class BMI {
 	protected String name;
 	protected boolean gender = true;
 	protected String temp;
-	protected int height;
-	protected int weight;
+	protected double height;
+	protected double weight;
 	protected String bmi;
+	protected double getbmi;
+	int count = 0;
 	
 	public BMI() {
 	}
 
-	public BMI(String name, String temp, int height, int weight) {
+	public BMI(String name, String temp, double height, double weight) {
 		this.name = name;
 		this.temp = temp;
 		this.height = height;
 		this.weight = weight;
 	}
 	
+	public BMI(String name, String temp, double height, double weight, String bmi) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void display() {
 		System.out.println("이름 >> " + name);
 		System.out.println("성별을 입력해주세요(m, f) >> " + temp);    
