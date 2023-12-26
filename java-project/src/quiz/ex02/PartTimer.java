@@ -1,4 +1,4 @@
-package quiz.inheritance.ex02;
+package quiz.ex02;
 
 public class PartTimer extends Company {
 

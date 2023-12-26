@@ -8,7 +8,7 @@ import java.io.ObjectInputStream;
 // 파일 읽기
 public class FileObjectLoad {
 	public static void main(String[] args) throws IOException {
-		A
+		
 		String name, id, pwd, temp, phone;
 		int age = 0;
 		boolean gender = true;
