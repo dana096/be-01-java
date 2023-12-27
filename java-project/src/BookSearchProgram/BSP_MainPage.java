@@ -44,7 +44,7 @@ public class BSP_MainPage {
 				break;
 			case 2:
 				System.out.println("도서 검색을 선택하셨습니다.");
-				BSP_BookSearchPage.BookSearchMenu();
+				BSP_BookSearchPage.choice_1();
 				System.out.println();
 				break;
 			case 3:

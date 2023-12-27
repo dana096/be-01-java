@@ -19,7 +19,7 @@ public class BSP_BookSearchPage {
 		sb.append("\n");
 		sb.append("1. 카테고리/제목/작가별 검색\n");
 		sb.append("2. 베스트셀러 보기\n");
-		sb.append("3. 프로그램 종료\n");
+		sb.append("3. 이전 페이지로 이동\n");
 		System.out.println(sb);
 		System.out.print("번호 선택 : ");
 		select = sc.nextInt();
@@ -27,7 +27,7 @@ public class BSP_BookSearchPage {
 		return select;
 	}
 
-	public static void main(String[] args) throws SQLException {
+	public static void choice_1() throws SQLException {
 
 		int no = 0;
 
@@ -36,7 +36,7 @@ public class BSP_BookSearchPage {
 			switch (no) {
 			case 1:
 				System.out.println("카테고리/제목/작가별 검색을 선택하셨습니다.");
-				BSP_BookSearchByPage.BookSearchByMenu();
+				BSP_BookSearchByPage.choice_2();
 				System.out.println();
 				break;
 			case 2:
@@ -48,9 +48,8 @@ public class BSP_BookSearchPage {
 				System.out.println();
 				break;
 			case 3:
-				System.out.println("프로그램을 종료합니다.");
-				sc.close();
-				System.exit(0);
+				System.out.println("이전 페이지로 이동합니다.");
+				return;
 			default:
 				System.out.println("없는 번호입니다. 다시 입력해주세요.");
 			}

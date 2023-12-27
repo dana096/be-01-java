@@ -20,6 +20,7 @@ public class BSP_BookSearchByPage {
 		sb.append("1. 카테고리별 검색\n");
 		sb.append("2. 제목별 검색\n");
 		sb.append("3. 작가별 검색\n");
+		sb.append("4. 이전 페이지로 이동\n");
 		System.out.println(sb);
 		System.out.print("번호 선택 : ");
 		select = sc.nextInt();
@@ -27,7 +28,7 @@ public class BSP_BookSearchByPage {
 		return select;
 	}
 
-	public static void main(String[] args) throws SQLException {
+	public static void choice_2() throws SQLException {
 
 		int no = 0;
 
@@ -55,6 +56,9 @@ public class BSP_BookSearchByPage {
 				System.out.println();
 				viewDetails();
 				break;
+			case 4:
+				System.out.println("이전 페이지로 이동합니다.");
+				return;
 			default:
 				System.out.println("없는 번호입니다. 다시 입력해주세요.");
 				break;
@@ -64,7 +68,7 @@ public class BSP_BookSearchByPage {
 
 	private static void selectBycategory() throws SQLException {
 		System.out.print("카테고리 입력 : ");
-		String c = sc.nextLine();
+		String c = sc.next();
 		System.out.println("============================");
 
 		ArrayList<BSP_VO> list = (ArrayList<BSP_VO>) dao.selectBycategory(c);
@@ -81,7 +85,7 @@ public class BSP_BookSearchByPage {
 
 	private static void selectBytitle() throws SQLException {
 		System.out.print("제목 입력 : ");
-		String t = sc.nextLine();
+		String t = sc.next();
 		System.out.println("============================");
 
 		ArrayList<BSP_VO> list = (ArrayList<BSP_VO>) dao.selectBytitle(t);
