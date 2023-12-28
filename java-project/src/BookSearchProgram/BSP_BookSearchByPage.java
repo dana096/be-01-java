@@ -68,7 +68,8 @@ public class BSP_BookSearchByPage {
 
 	private static void selectBycategory() throws SQLException {
 		System.out.print("카테고리 입력 : ");
-		String c = sc.next();
+		sc.nextLine();
+		String c = sc.nextLine();
 		System.out.println("============================");
 
 		ArrayList<BSP_VO> list = (ArrayList<BSP_VO>) dao.selectBycategory(c);
@@ -85,7 +86,8 @@ public class BSP_BookSearchByPage {
 
 	private static void selectBytitle() throws SQLException {
 		System.out.print("제목 입력 : ");
-		String t = sc.next();
+		sc.nextLine();
+		String t = sc.nextLine();
 		System.out.println("============================");
 
 		ArrayList<BSP_VO> list = (ArrayList<BSP_VO>) dao.selectBytitle(t);
@@ -102,7 +104,8 @@ public class BSP_BookSearchByPage {
 
 	private static void selectBywriter() throws SQLException {
 		System.out.print("작가 입력 : ");
-		String w = sc.next();
+		sc.nextLine();
+		String w = sc.nextLine();
 		System.out.println("============================");
 
 		ArrayList<BSP_VO> list = (ArrayList<BSP_VO>) dao.selectBywriter(w);
